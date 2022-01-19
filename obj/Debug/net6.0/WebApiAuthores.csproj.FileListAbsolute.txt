@@ -58,3 +58,10 @@ C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\runt
 C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Runtime.Caching.dll
 C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\runtimes\win\lib\netcoreapp3.0\System.Windows.Extensions.dll
+C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.Internal.dll
+C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\Microsoft.AspNetCore.Cryptography.KeyDerivation.dll
+C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\Microsoft.AspNetCore.Identity.EntityFrameworkCore.dll
+C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\Microsoft.Extensions.Identity.Core.dll
+C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\Microsoft.Extensions.Identity.Stores.dll
+C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\AutoMapper.dll
+C:\Users\lconde\source\repos\WebApiAuthores\WebApiAuthores\bin\Debug\net6.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll

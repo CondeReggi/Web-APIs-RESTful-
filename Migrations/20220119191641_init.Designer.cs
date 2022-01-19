@@ -11,8 +11,8 @@ using WebApiAuthores;
 namespace WebApiAuthores.Migrations
 {
     [DbContext(typeof(AplicationDbContext))]
-    [Migration("20220118145247_Libros")]
-    partial class Libros
+    [Migration("20220119191641_init")]
+    partial class init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -42,13 +42,20 @@ namespace WebApiAuthores.Migrations
 
             modelBuilder.Entity("WebApiAuthores.Controllers.Entidades.Libro", b =>
                 {
-                    b.Property<string>("Id")
-                        .HasColumnType("nvarchar(450)");
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"), 1L, 1);
 
                     b.Property<int>("AutorId")
                         .HasColumnType("int");
 
                     b.Property<string>("Titulo")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("descripcion")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

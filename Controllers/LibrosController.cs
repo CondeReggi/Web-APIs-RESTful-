@@ -1,8 +1,11 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using Microsoft.EntityFrameworkCore;
+﻿
+using WebApiAuthores.DTOs;
 using WebApiAuthores.Controllers.Entidades;
+using AutoMapper;
+using Microsoft.EntityFrameworkCore;
+using Microsoft.AspNetCore.Mvc;
 
-namespace WebApiAuthores.Controllers
+namespace WebApiAuthores.Controllers 
 {
     [ApiController]
     [Route("api/libros")]
@@ -14,10 +17,24 @@ namespace WebApiAuthores.Controllers
             this.context = context;
         }
 
-        [HttpGet("{id:int}")]
+        [HttpGet("prueba")]
+        public Task<ActionResult> ObtenerPrueba()
+        {
+            return Ok();
+
+        }
+
+        [HttpGet("{id}")]
         public async Task<ActionResult<Libro>> Get(int id)
         {
-            return await context.Libros.Include(x => x.Autor).FirstOrDefaultAsync(x => x.Id == id);   
+            try
+            {
+                return await context.Libros.FirstOrDefaultAsync(x => x.Id == id);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.Message);  
+            }
         }
 
         [HttpPost]
